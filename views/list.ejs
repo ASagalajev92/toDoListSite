@@ -17,12 +17,12 @@
 
   <div class="box">
     <!-- Cycle for adding new next item to a list -->
-    <% for(let i = 0; i < newListItems.length; i++){ %>
+    <% for (let i = 0; i<newListItems.length; i++) { %>
     <div class="item">
       <input type="checkbox">
-      <p><%= newListItems[i] %></p><br>
-      <% } %>
+      <p><%= newListItems[i] %></p>
     </div>
+    <% } %>
 
     <form class="item" action="/" method="post">
       <input type="text" name="newItem" class="item" placeholder="Nex Item" autocomplete="off">
